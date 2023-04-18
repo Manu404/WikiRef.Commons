@@ -12,6 +12,7 @@ namespace WikiRef.Commons.Data
         [JsonProperty] public List<string> Urls { get; set; }
         [JsonProperty] public string VideoId { get; set; }
         [JsonProperty] public string Name { get;  set; }
+        [JsonProperty] public string ChannelName { get; set; }
         [JsonProperty] public SourceStatus IsValid { get; set; }
         [JsonProperty] public bool IsPlaylist { get; set; }
         [JsonProperty] public bool IsUser { get;  set; }

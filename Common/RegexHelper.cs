@@ -10,6 +10,7 @@ namespace WikiRef.Commons
         public Regex ExtractYoutubeUrlFromEmbededVideoRegex { get; private set; }
         public Regex ExtractYoutubeVideoIdFromUrlRegex { get; private set; }
         public Regex ExtractMetaAndUrl { get; private set; }
+        public Regex ExtractChannelName { get; private set; }
 
         public RegexHelper()
         {
@@ -35,6 +36,10 @@ namespace WikiRef.Commons
 
             string extractMetaAndUrl = @"([<]( *)(ref)( |.*)([>]))(?<meta>.*?)(?<url>http.*?)?([<]( *)(/ref)( *)[>])"; // regex developped with regex101, regex and the test datas available heree:  https://regex101.com/r/Oo9JR2/1
             ExtractMetaAndUrl = new Regex(extractMetaAndUrl, RegexOptions.Compiled | RegexOptions.IgnoreCase);
+
+            string extractChannelName = @"(<link itemprop=name content=)(?<name>.*?)(>)"; // regex developped with regex101, regex and the test datas available heree:  https://regex101.com/r/Oo9JR2/1
+            ExtractChannelName = new Regex(extractChannelName, RegexOptions.Compiled | RegexOptions.IgnoreCase);
+
         }
     }
 }
