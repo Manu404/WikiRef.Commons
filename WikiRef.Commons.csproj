@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <TargetFramework>net7.0</TargetFramework>
-    <AssemblyName>wikiref</AssemblyName>
+    <AssemblyName>WikiRef.Commons</AssemblyName>
     <PlatformTarget>x64</PlatformTarget>
   </PropertyGroup>
 
