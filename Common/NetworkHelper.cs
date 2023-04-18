@@ -6,7 +6,7 @@ using System.Net.Sockets;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace WikiRef
+namespace WikiRef.Commons
 {
     internal class NetworkHelper
     {

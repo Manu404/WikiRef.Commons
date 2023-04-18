@@ -1,9 +1,7 @@
-﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.IO;
 
-namespace WikiRef
+namespace WikiRef.Commons
 {
     class FileHelper
     {

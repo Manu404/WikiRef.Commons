@@ -1,6 +1,6 @@
-﻿using System.Runtime;
+﻿using WikiRef.Commons.Data;
 
-namespace WikiRef
+namespace WikiRef.Commons
 {
     class AppConfiguration
     {

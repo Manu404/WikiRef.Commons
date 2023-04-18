@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace WikiRef
+namespace WikiRef.Commons.Data
 {
 
     class Reference

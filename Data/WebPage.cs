@@ -1,4 +1,4 @@
-﻿namespace WikiRef
+﻿namespace WikiRef.Commons.Data
 {
     class WebPage
     {

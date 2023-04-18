@@ -1,6 +1,4 @@
-﻿using System.Security.Cryptography.X509Certificates;
-
-namespace WikiRef
+﻿namespace WikiRef.Commons.Data
 {
     public class ReferenceUrl
     {

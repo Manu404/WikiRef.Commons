@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace WikiRef
+namespace WikiRef.Commons
 {
 
     class HtmlReportHelper

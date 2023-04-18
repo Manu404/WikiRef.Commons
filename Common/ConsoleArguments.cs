@@ -1,6 +1,6 @@
 ﻿using CommandLine;
 
-namespace WikiRef
+namespace WikiRef.Commons
 {
     [Verb("default", HelpText = "Provide analysis features regarding references. '--help analyse' for more informations.")]
     public class DefaultOptions
