@@ -2,7 +2,7 @@
 
 namespace WikiRef.Commons
 {
-    class BootStrapper
+    public class BootStrapper
     {
         //dependencies
         public AppConfiguration ConfigHelper { get; private set; }   
