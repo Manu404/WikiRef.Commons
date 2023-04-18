@@ -3,7 +3,7 @@ using System.IO;
 
 namespace WikiRef.Commons
 {
-    class FileHelper
+    public class FileHelper
     {
         private ConsoleHelper _consoleHelper;
 

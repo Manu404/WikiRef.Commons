@@ -1,6 +1,6 @@
 ﻿namespace WikiRef.Commons.Data
 {
-    class WebPage
+    public class WebPage
     {
         public string Url { get; set; }
 

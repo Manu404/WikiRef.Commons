@@ -2,8 +2,7 @@
 
 namespace WikiRef.Commons.Data
 {
-
-    class Reference
+    public class Reference
     {
         public string Content { get; set; }
         public List<ReferenceUrl> Urls { get; set; }

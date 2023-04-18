@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace WikiRef.Commons
 {
-    internal class NetworkHelper
+    public class NetworkHelper
     {
         private ConsoleHelper _console;
         AppConfiguration _config;

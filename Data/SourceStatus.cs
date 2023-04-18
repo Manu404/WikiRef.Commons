@@ -1,6 +1,6 @@
 ﻿namespace WikiRef.Commons.Data
 {
-    enum SourceStatus
+    public enum SourceStatus
     {
         Valid = 0,
         Invalid = 1,

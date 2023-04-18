@@ -3,8 +3,7 @@ using System.Text;
 
 namespace WikiRef.Commons
 {
-
-    class ConsoleHelper
+    public class ConsoleHelper
     {
         AppConfiguration _config;
         HtmlReportHelper _report;

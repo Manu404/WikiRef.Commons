@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace WikiRef.Commons
 {
-    class WhitelistHandler
+    public class WhitelistHandler
     {
         // some website avoid crawling pages, those are blackliste to avoid false positive
         private List<string> WhitelistWebsite = new List<string>() { "linkedin.com" };

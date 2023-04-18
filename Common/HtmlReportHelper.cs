@@ -3,8 +3,7 @@ using System.Text;
 
 namespace WikiRef.Commons
 {
-
-    class HtmlReportHelper
+    public class HtmlReportHelper
     {
         StringBuilder stringBuilder = new StringBuilder();
 

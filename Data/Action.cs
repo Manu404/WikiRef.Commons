@@ -1,6 +1,6 @@
 ﻿namespace WikiRef.Commons.Data
 {
-    enum Action
+    public enum Action
     {
         Analyse,
         Youtube,

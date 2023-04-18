@@ -2,7 +2,7 @@
 
 namespace WikiRef.Commons
 {
-    class AppConfiguration
+    public class AppConfiguration
     {
         public Action Action { get; set; }
 
