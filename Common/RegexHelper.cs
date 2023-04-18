@@ -12,11 +12,13 @@ namespace WikiRef.Commons
         public Regex ExtractMetaAndUrl { get; private set; }
         public Regex ExtractChannelName { get; private set; }
         public Regex ExtractUrlTimeCode { get; private set; }
+        public Regex ExtractDomain { get; private set; }
 
         public RegexHelper()
         {
             BuildRegex();
         }
+        
 
         private void BuildRegex()
         {
@@ -41,8 +43,11 @@ namespace WikiRef.Commons
             string extractChannelName = @"(<link itemprop=name content=)(?<name>.*?)(>)"; // regex developped with regex101, regex and the test datas available heree: https://regex101.com/r/gQ945i/1
             ExtractChannelName = new Regex(extractChannelName, RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
-            string extractUrlTimeCode = @"(t=)(?<time>[0-9]*)(&|s)"; // regex developped with regex101, regex and the test datas available heree: https://regex101.com/r/Hr1T8I/1
-            ExtractUrlTimeCode = new Regex(extractChannelName, RegexOptions.Compiled | RegexOptions.IgnoreCase);
+            string extractUrlTimeCode = @"(t=)(?<time>[0-9]*)(&|s)?"; // regex developped with regex101, regex and the test datas available heree: https://regex101.com/r/Hr1T8I/1
+            ExtractUrlTimeCode = new Regex(extractUrlTimeCode, RegexOptions.Compiled | RegexOptions.IgnoreCase);
+
+            string extractDomain = @"(https?:\/\/)(?<domain>.*?)(\/)"; // regex developped with regex101, regex and the test datas available heree: https://regex101.com/r/2Q9N1K/1
+            ExtractDomain = new Regex(extractDomain, RegexOptions.Compiled | RegexOptions.IgnoreCase);
         }
     }
 }

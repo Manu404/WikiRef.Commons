@@ -66,7 +66,6 @@ namespace WikiRef.Commons
             WriteLine(text);
             if (_config.Silent) return;
             WriteLine(string.Format(new string('-', 20)));
-            WriteLine(text);
         }
 
         private void WriteInColor(string text, ConsoleColor color)
