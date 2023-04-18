@@ -41,7 +41,7 @@ namespace WikiRef.Commons
             string extractChannelName = @"(<link itemprop=name content=)(?<name>.*?)(>)"; // regex developped with regex101, regex and the test datas available heree: https://regex101.com/r/gQ945i/1
             ExtractChannelName = new Regex(extractChannelName, RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
-            string extractUrlTimeCode = @"(t=)([0-9]*)(&|s)"; // regex developped with regex101, regex and the test datas available heree: https://regex101.com/r/Hr1T8I/1
+            string extractUrlTimeCode = @"(t=)(?<time>[0-9]*)(&|s)"; // regex developped with regex101, regex and the test datas available heree: https://regex101.com/r/Hr1T8I/1
             ExtractUrlTimeCode = new Regex(extractChannelName, RegexOptions.Compiled | RegexOptions.IgnoreCase);
         }
     }
