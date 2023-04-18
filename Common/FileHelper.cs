@@ -67,14 +67,14 @@ namespace WikiRef.Commons
                 Directory.CreateDirectory(subfolder);
         }
 
-        private string GenerateOutputFilePath(string filename, string subfolder, string extension)
+        public string GenerateOutputFilePath(string filename, string subfolder, string extension)
         {
             if (String.IsNullOrEmpty(filename))
                 filename = String.IsNullOrEmpty(subfolder) ? GenerateUniqueFileName(extension) : Path.Combine(subfolder, GenerateUniqueFileName(extension));
             return filename;
         }
 
-        private string GenerateUniqueFileName(string extension)
+        public string GenerateUniqueFileName(string extension)
         {
             string filenameWithtoutExtension = String.Format("output_{0}", DateTime.Now.ToString("yyyyMMddTHH-mm-ss"));
             string filenameWithExtension = String.Format("{0}{1}", filenameWithtoutExtension, extension);
