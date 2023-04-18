@@ -58,7 +58,7 @@ namespace WikiRef.Commons
             }
         }
 
-        private void CreateDirecotoryIfNotExist(string subfolder)
+        public void CreateDirecotoryIfNotExist(string subfolder)
         {
             if (String.IsNullOrEmpty(subfolder))
                 return;
