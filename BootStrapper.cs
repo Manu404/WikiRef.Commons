@@ -8,7 +8,6 @@ namespace WikiRef.Commons
         public AppConfiguration ConfigHelper { get; private set; }   
         public ConsoleHelper ConsoleHelper { get; private set; }
         public FileHelper FileHelper { get; private set; }
-        public WhitelistHandler WhitelistHandler { get; private set; }
         public RegexHelper RegexHelper { get; private set; }
         public HtmlReportHelper HtmlReportBuilder { get; private set; }
         public NetworkHelper NetworkHelper { get; private set; }
@@ -21,7 +20,6 @@ namespace WikiRef.Commons
             ConsoleHelper = new ConsoleHelper(ConfigHelper, HtmlReportBuilder);
             NetworkHelper = new NetworkHelper(ConsoleHelper, ConfigHelper.Ipv4Only);
             FileHelper = new FileHelper(ConsoleHelper);
-            WhitelistHandler = new WhitelistHandler();
             RegexHelper = new RegexHelper();
         }
 

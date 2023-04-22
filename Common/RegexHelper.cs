@@ -20,10 +20,10 @@ namespace WikiRef.Commons
 
         private void BuildRegex()
         {
-            string referenceContainingUrlExpression = @"([<]( *)(ref)( |.*?)([>])).*?(?:https?|www)?.*?([<]( *?)(/ref)( *?)[>])"; // regex developped with regex101, regex and the test datas available heree: https://regex101.com/r/oqL42I/1
+            string referenceContainingUrlExpression = @"([<]( *)(ref)( |.*?)([>])).*?(?:https?|www)?.*?(([<]( *?)(/ref)( *?)[>]?))"; // regex developped with regex101, regex and the test datas available heree: https://regex101.com/r/oqL42I/1
             ExtractReferenceFromPageRegex = new Regex(referenceContainingUrlExpression, RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
-            string urlFilterExpression = @"\b(?<url>(https?:.//?|www\.).*?)(?:</ref>|[,]|[\]]|[ ]|[ ]|[<])"; // regex developped with regex101, regex and the test datas available heree: https://regex101.com/r/2lxQbx/1
+            string urlFilterExpression = @"\b(?<url>(https?:.//?|www\.).*?)(?:</ref>|[,]|[\]]|[ ]|[ ]|[<]|[\|])"; // regex developped with regex101, regex and the test datas available heree: https://regex101.com/r/BdZBzu/1
             ExtractUrlFromReferenceRegex = new Regex(urlFilterExpression, RegexOptions.Compiled | RegexOptions.IgnoreCase);
 
             string titleFilterExpression = @"(<title>)(?<name>.*?)(</title>)"; // regex developped with regex101, regex and the test datas available heree: https://regex101.com/r/HOb95o/1

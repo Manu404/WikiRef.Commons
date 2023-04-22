@@ -3,7 +3,7 @@
     public class ReferenceUrl
     {
         public string Url { get; set; }
-        public bool IsValid { get; set; }
+        public SourceStatus SourceStatus { get; set; }
 
         public ReferenceUrl() { }
         public ReferenceUrl(string Url) 
