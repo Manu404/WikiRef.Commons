@@ -96,8 +96,8 @@ namespace WikiRef.Commons
             string result = String.Empty;
             try
             {
-                //if (!url.Trim().StartsWith("https") || url.Trim().StartsWith("http"))
-                //    url = "https://" + url;
+                if (!url.Trim().StartsWith("https") || url.Trim().StartsWith("http"))
+                    url = "https://" + url;
 
                 using HttpResponseMessage response = cookieLess ? await _httpClientCookieless.GetAsync(url) : await _httpClient.GetAsync(url);
                 using HttpContent content = response.Content;
@@ -136,8 +136,8 @@ namespace WikiRef.Commons
             HttpStatusCode result = HttpStatusCode.NotFound;
             try
             {
-                //if (!url.Trim().StartsWith("https") || url.Trim().StartsWith("http"))
-                //    url = "http://" + url;
+                if (!url.Trim().StartsWith("https") || url.Trim().StartsWith("http"))
+                    url = "http://" + url;
 
                 using HttpResponseMessage response = await _httpClient.GetAsync(url);
                 return response.StatusCode;
