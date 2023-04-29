@@ -5,12 +5,12 @@ namespace WikiRef.Commons
     public class BootStrapper
     {
         //dependencies
-        public AppConfiguration ConfigHelper { get; private set; }   
-        public ConsoleHelper ConsoleHelper { get; private set; }
-        public FileHelper FileHelper { get; private set; }
-        public RegexHelper RegexHelper { get; private set; }
-        public HtmlReportHelper HtmlReportBuilder { get; private set; }
-        public NetworkHelper NetworkHelper { get; private set; }
+        public AppConfiguration ConfigHelper { get; set; }   
+        public ConsoleHelper ConsoleHelper { get; set; }
+        public FileHelper FileHelper { get; set; }
+        public RegexHelper RegexHelper { get; set; }
+        public HtmlReportHelper HtmlReportBuilder { get; set; }
+        public NetworkHelper NetworkHelper { get; set; }
 
         // Initialize dependencies and config
         public void InitializeDependencies(DefaultOptions options)
