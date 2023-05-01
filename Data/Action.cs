@@ -6,6 +6,7 @@
         Youtube,
         Archive,
         Backup,
+        Publish,
         Undefined
     }
 }
