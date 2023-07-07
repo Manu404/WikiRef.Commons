@@ -125,7 +125,7 @@ namespace WikiRef.Commons
             // Validity of current cookies
             // CONSENT: Mon, 31 Mar 2025 08:49:22 GMT
             // SOCS: Tue, 30 Apr 2024 08:49:25 GMT
-            _httpClient.DefaultRequestHeaders.Add("Cookie", "SOCS=CAISNQgDEitib3FfaWRlbnRpdHlmcm9udGVuZHVpc2VydmVyXzIwMjMwMzI4LjA1X3AwGgJlbiACGgYIgOidoQY; CONSENT=PENDING+823;");
+            _httpClient.DefaultRequestHeaders.Add("Cookie", "SOCS=CAISNQgDEitib3FfaWRlbnRpdHlmcm9udGVuZHVpc2VydmVyXzIwMjMwNzA0LjA1X3AwGgJlbiACGgYIgKudpQY; CONSENT=PENDING+658;");
             var result = await GetContent(url);
             _httpClient.DefaultRequestHeaders.Remove("Cookie");
             return result;
