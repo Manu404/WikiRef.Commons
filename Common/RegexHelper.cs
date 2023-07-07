@@ -13,6 +13,7 @@ namespace WikiRef.Commons
         public Regex ExtractChannelName { get; private set; }
         public Regex ExtractUrlTimeCode { get; private set; }
         public Regex ExtractDomain { get; private set; }
+        public Regex ExtractYoutubeIdFromFileNameRegex { get; private set; }
 
         public RegexHelper()
         {
@@ -48,6 +49,9 @@ namespace WikiRef.Commons
 
             string extractDomain = @"(https?:\/\/)(?<domain>.*?)(\/)"; // regex developped with regex101, regex and the test datas available heree: https://regex101.com/r/2Q9N1K/1
             ExtractDomain = new Regex(extractDomain, RegexOptions.Compiled | RegexOptions.IgnoreCase);
+
+            string extractYoutubeIdFromFileName = @"\[(?<id>.*?)\].mp4"; // regex developped with regex101, regex and the test datas available heree: https://regex101.com/r/2Q9N1K/1
+            ExtractYoutubeIdFromFileNameRegex = new Regex(extractYoutubeIdFromFileName, RegexOptions.Compiled | RegexOptions.IgnoreCase);
         }
     }
 }
